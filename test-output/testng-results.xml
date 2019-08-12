@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11459" started-at="2019-08-09T13:35:38Z" finished-at="2019-08-09T13:35:50Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11459" started-at="2019-08-09T13:35:38Z" finished-at="2019-08-09T13:35:50Z">
+      <class name="com.TestTechnology.TestApp">
+        <test-method status="PASS" signature="browser()[pri:0, instance:com.TestTechnology.TestApp@26653222]" name="browser" is-config="true" duration-ms="4956" started-at="2019-08-09T19:05:38Z" finished-at="2019-08-09T19:05:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="loginPage()[pri:0, instance:com.TestTechnology.TestApp@26653222]" name="loginPage" duration-ms="549" started-at="2019-08-09T19:05:43Z" finished-at="2019-08-09T19:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="PASS" signature="verifyloginUser()[pri:0, instance:com.TestTechnology.TestApp@26653222]" name="verifyloginUser" duration-ms="51" started-at="2019-08-09T19:05:44Z" finished-at="2019-08-09T19:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginUser -->
+        <test-method status="PASS" signature="verifyBook()[pri:0, instance:com.TestTechnology.TestApp@26653222]" name="verifyBook" duration-ms="5575" started-at="2019-08-09T19:05:44Z" finished-at="2019-08-09T19:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBook -->
+        <test-method status="PASS" signature="logoutPage()[pri:0, instance:com.TestTechnology.TestApp@26653222]" name="logoutPage" duration-ms="308" started-at="2019-08-09T19:05:49Z" finished-at="2019-08-09T19:05:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutPage -->
+      </class> <!-- com.TestTechnology.TestApp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
