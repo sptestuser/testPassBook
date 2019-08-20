@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8917" started-at="2019-08-20T06:30:45Z" finished-at="2019-08-20T06:30:54Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8917" started-at="2019-08-20T06:30:45Z" finished-at="2019-08-20T06:30:54Z">
+      <class name="com.TestTechnology.TestApp">
+        <test-method status="PASS" signature="browser()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="browser" is-config="true" duration-ms="4376" started-at="2019-08-20T12:00:45Z" finished-at="2019-08-20T12:00:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="AddContact()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="AddContact" duration-ms="1719" started-at="2019-08-20T12:00:49Z" finished-at="2019-08-20T12:00:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddContact -->
+        <test-method status="PASS" signature="verifyContact()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="verifyContact" duration-ms="333" started-at="2019-08-20T12:00:51Z" finished-at="2019-08-20T12:00:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContact -->
+        <test-method status="PASS" signature="verifyContactEditable()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="verifyContactEditable" duration-ms="1207" started-at="2019-08-20T12:00:51Z" finished-at="2019-08-20T12:00:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactEditable -->
+        <test-method status="PASS" signature="verifysortAlphabet()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="verifysortAlphabet" duration-ms="206" started-at="2019-08-20T12:00:52Z" finished-at="2019-08-20T12:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysortAlphabet -->
+        <test-method status="PASS" signature="verifysortLastname()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="verifysortLastname" duration-ms="71" started-at="2019-08-20T12:00:53Z" finished-at="2019-08-20T12:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysortLastname -->
+        <test-method status="PASS" signature="verifyEmail()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="verifyEmail" duration-ms="96" started-at="2019-08-20T12:00:53Z" finished-at="2019-08-20T12:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEmail -->
+        <test-method status="PASS" signature="verifyCancel()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="verifyCancel" duration-ms="295" started-at="2019-08-20T12:00:53Z" finished-at="2019-08-20T12:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCancel -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:com.TestTechnology.TestApp@68c4039c]" name="exit" is-config="true" duration-ms="601" started-at="2019-08-20T12:00:53Z" finished-at="2019-08-20T12:00:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- com.TestTechnology.TestApp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

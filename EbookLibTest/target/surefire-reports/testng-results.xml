@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="15338" started-at="2019-08-16T08:40:06Z" finished-at="2019-08-16T08:40:21Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="15338" started-at="2019-08-16T08:40:06Z" finished-at="2019-08-16T08:40:21Z">
+      <class name="com.TestTechnology.TestApp">
+        <test-method status="PASS" signature="browser()[pri:0, instance:com.TestTechnology.TestApp@90f6bfd]" name="browser" is-config="true" duration-ms="5079" started-at="2019-08-16T14:10:06Z" finished-at="2019-08-16T14:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser -->
+        <test-method status="PASS" signature="AddContact()[pri:0, instance:com.TestTechnology.TestApp@90f6bfd]" name="AddContact" duration-ms="7188" started-at="2019-08-16T14:10:11Z" finished-at="2019-08-16T14:10:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddContact -->
+        <test-method status="PASS" signature="verifyCoctact()[pri:0, instance:com.TestTechnology.TestApp@90f6bfd]" name="verifyCoctact" duration-ms="2349" started-at="2019-08-16T14:10:18Z" finished-at="2019-08-16T14:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCoctact -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:com.TestTechnology.TestApp@90f6bfd]" name="exit" is-config="true" duration-ms="704" started-at="2019-08-16T14:10:21Z" finished-at="2019-08-16T14:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- com.TestTechnology.TestApp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
