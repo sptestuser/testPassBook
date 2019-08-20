@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="15338" started-at="2019-08-16T08:40:06Z" finished-at="2019-08-16T08:40:21Z">
+  <suite name="Suite" duration-ms="11331" started-at="2019-08-09T13:04:37Z" finished-at="2019-08-09T13:04:48Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="15338" started-at="2019-08-16T08:40:06Z" finished-at="2019-08-16T08:40:21Z">
+    <test name="Test" duration-ms="11331" started-at="2019-08-09T13:04:37Z" finished-at="2019-08-09T13:04:48Z">
       <class name="com.TestTechnology.TestApp">
-        <test-method status="PASS" signature="browser()[pri:0, instance:com.TestTechnology.TestApp@90f6bfd]" name="browser" is-config="true" duration-ms="5079" started-at="2019-08-16T14:10:06Z" finished-at="2019-08-16T14:10:11Z">
+        <test-method status="PASS" signature="browser()[pri:0, instance:com.TestTechnology.TestApp@327471b5]" name="browser" is-config="true" duration-ms="4866" started-at="2019-08-09T18:34:37Z" finished-at="2019-08-09T18:34:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser -->
-        <test-method status="PASS" signature="AddContact()[pri:0, instance:com.TestTechnology.TestApp@90f6bfd]" name="AddContact" duration-ms="7188" started-at="2019-08-16T14:10:11Z" finished-at="2019-08-16T14:10:18Z">
+        <test-method status="PASS" signature="loginPage()[pri:0, instance:com.TestTechnology.TestApp@327471b5]" name="loginPage" duration-ms="562" started-at="2019-08-09T18:34:42Z" finished-at="2019-08-09T18:34:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddContact -->
-        <test-method status="PASS" signature="verifyCoctact()[pri:0, instance:com.TestTechnology.TestApp@90f6bfd]" name="verifyCoctact" duration-ms="2349" started-at="2019-08-16T14:10:18Z" finished-at="2019-08-16T14:10:21Z">
+        </test-method> <!-- loginPage -->
+        <test-method status="PASS" signature="verifyloginUser()[pri:0, instance:com.TestTechnology.TestApp@327471b5]" name="verifyloginUser" duration-ms="31" started-at="2019-08-09T18:34:42Z" finished-at="2019-08-09T18:34:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyCoctact -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:com.TestTechnology.TestApp@90f6bfd]" name="exit" is-config="true" duration-ms="704" started-at="2019-08-16T14:10:21Z" finished-at="2019-08-16T14:10:21Z">
+        </test-method> <!-- verifyloginUser -->
+        <test-method status="PASS" signature="verifyBook()[pri:0, instance:com.TestTechnology.TestApp@327471b5]" name="verifyBook" duration-ms="5599" started-at="2019-08-09T18:34:42Z" finished-at="2019-08-09T18:34:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- exit -->
+        </test-method> <!-- verifyBook -->
+        <test-method status="PASS" signature="logoutPage()[pri:0, instance:com.TestTechnology.TestApp@327471b5]" name="logoutPage" duration-ms="261" started-at="2019-08-09T18:34:48Z" finished-at="2019-08-09T18:34:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutPage -->
       </class> <!-- com.TestTechnology.TestApp -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

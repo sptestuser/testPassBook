@@ -5,9 +5,8 @@
     <classes>
       <class name="com.TestTechnology.TestApp">
         <methods>
+          <include name="verifyBook"/>
           <include name="browser"/>
-          <include name="verifyContactEditable"/>
-          <include name="exit"/>
         </methods>
       </class> <!-- com.TestTechnology.TestApp -->
     </classes>

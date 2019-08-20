@@ -1,4 +1,7 @@
+com\Technology\HomePage.class
+com\Technology\LoginPage.class
 com\Technology\listeners.class
+com\Technology\AutoIT.class
 com\Technology\ExtentReporterNG.class
 com\Technology\AddEBookPage.class
 com\Technology\Base.class

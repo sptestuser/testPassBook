@@ -1,18 +1,29 @@
 package com.TestTechnology;
 
-import org.testng.annotations.AfterTest;
+import java.io.IOException;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.Technology.AddEBookPage;
 import com.Technology.Base;
+import com.Technology.HomePage;
+import com.Technology.LoginPage;
+
+import junit.framework.Assert;
 
 @Listeners(com.Technology.listeners.class)
 
 public class TestApp extends Base {
 	
 	AddEBookPage bookpage = new AddEBookPage();
+	LoginPage login = new LoginPage();
+	HomePage home = new HomePage();
+	
+	
+	
 	
 	@BeforeTest
 	public void browser() throws InterruptedException {
@@ -20,50 +31,37 @@ public class TestApp extends Base {
 		System.out.println(d+prop.getProperty("url"));
 		d.get(prop.getProperty("url"));
 	}
+	
 	@Test(priority=1)
-	public void AddContact(){
+	public void loginPage() throws IOException, InterruptedException {
 		System.out.println("test1");
-		bookpage.enterContactDetails();	
+		login.loginBtn();
+		login.loginApp("testuser@spsoft.in","Spsoft@123");
 	}
-	@Test(priority=2)
-	public void verifyContact(){
-		System.out.println("test2");
-		bookpage.SetFilterContact();
-		bookpage.SetFilterContactName();
-	}
-	@Test(priority=3)
-	public void verifyContactEditable()
-	{
-		System.out.println("test3");
-		bookpage.EditContactDetails();
-	}
+	
 	@Test(priority=4)
-	public void verifysortAlphabet()
-	{
-		System.out.println("test4");
-		bookpage.SortAlphabetWise();
+	public void logoutPage() throws IOException, InterruptedException {
+		System.out.println("test3");
+		login.clickLogOut();
+		d.close();
 	}
-	@Test(priority=5)
-	public void verifysortLastname() 
-	{
-		System.out.println("test5");
-		bookpage.SortLatname();
+	
+	@Test(priority=2)
+	public void verifyloginUser() throws IOException, InterruptedException {
+		String actualUserName = d.findElement(By.cssSelector("[title='Manage']")).getText();
+		String actualValue =actualUserName.substring(8,actualUserName.length()-1);
+		System.out.println("actualValue"+actualValue);
+		Assert.assertEquals("testuser@spsoft.in", actualValue);
+		Assert.assertTrue(false);
 	}
-	@Test(priority=6)
-	public void verifyEmail()
-	{
-		System.out.println("test6");
-		bookpage.SortEmail();
+	
+	@Test(priority=3)
+	public void verifyBook() throws IOException, InterruptedException {
+		
+		home.clickOnAddBook();
+		Thread.sleep(3000);
+		bookpage.AddEBook();
+		
 	}
-	@Test(priority=7)
-	public void verifyCancel()
-	{
-		System.out.println("test7");
-		bookpage.CancelEdit();
-	}
-	@AfterTest
-	public void exit()
-	{
-		d.quit();
-	}
+
 }
