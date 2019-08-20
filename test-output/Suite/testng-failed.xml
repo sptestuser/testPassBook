@@ -9,8 +9,15 @@
     <classes>
       <class name="com.TestTechnology.TestApp">
         <methods>
+          <include name="AddContact"/>
+          <include name="verifysortAlphabet"/>
           <include name="browser"/>
-          <include name="verifyloginUser"/>
+          <include name="verifyCancel"/>
+          <include name="verifyContact"/>
+          <include name="verifyContactEditable"/>
+          <include name="verifyEmail"/>
+          <include name="verifysortLastname"/>
+          <include name="exit"/>
         </methods>
       </class> <!-- com.TestTechnology.TestApp -->
     </classes>
