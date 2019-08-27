@@ -56,8 +56,9 @@ public class TestApp extends Base {
 	public void verifyEmail()
 	{
 		System.out.println("test6");
-		bookpage.SortEmail();
 		Assert.fail();
+		bookpage.SortEmail();
+		
 	}
 	@Test(priority=7)
 	public void verifyCancel()
