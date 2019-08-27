@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 import com.Technology.AddEBookPage;
 import com.Technology.Base;
 
+import junit.framework.Assert;
+
 @Listeners(com.Technology.listeners.class)
 
 public class TestApp extends Base {
