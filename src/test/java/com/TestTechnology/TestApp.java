@@ -24,6 +24,7 @@ public class TestApp extends Base {
 	public void AddContact(){
 		System.out.println("test1");
 		bookpage.enterContactDetails();	
+		
 	}
 	@Test(priority=2)
 	public void verifyContact(){
@@ -54,6 +55,7 @@ public class TestApp extends Base {
 	{
 		System.out.println("test6");
 		bookpage.SortEmail();
+		Assert.fail();
 	}
 	@Test(priority=7)
 	public void verifyCancel()
