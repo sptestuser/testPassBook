@@ -18,6 +18,15 @@ public class listeners implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Listners Failed");
 		baseClass.getScrnShot();	
+		try {
+		 File file= new File("faildata.properties");
+	        if(file.exists()){
+	        	file.delete();
+	        }
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 	
 	public void onTestSkipped(ITestResult result) {
@@ -29,6 +38,13 @@ public class listeners implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
+		try {
+			FileOutputStream fos = new FileOutputStream("faildata.properties");
+	        fos.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
