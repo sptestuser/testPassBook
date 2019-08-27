@@ -26,7 +26,7 @@ public class TestApp extends Base {
 	public void AddContact(){
 		System.out.println("test1");
 		bookpage.enterContactDetails();	
-		Assert.fail();
+		
 	}
 	@Test(priority=2)
 	public void verifyContact(){
