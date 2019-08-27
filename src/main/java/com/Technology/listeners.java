@@ -19,7 +19,7 @@ public class listeners implements ITestListener {
 		System.out.println("Listners Failed");
 		baseClass.getScrnShot();	
 		try {
-		 File file= new File("faildata.properties");
+		 File file= new File("faildata.prop");
 	        if(file.exists()){
 	        	file.delete();
 	        }
@@ -39,7 +39,7 @@ public class listeners implements ITestListener {
 
 	public void onStart(ITestContext context) {
 		try {
-			FileOutputStream fos = new FileOutputStream("faildata.properties");
+			FileOutputStream fos = new FileOutputStream("faildata.prop");
 	        fos.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
