@@ -52,13 +52,13 @@ public class TestApp extends Base {
 		System.out.println("test5");
 		bookpage.SortLatname();
 	}
-	@Test(priority=6)
+	/*@Test(priority=6)
 	public void verifyEmail()
 	{
 		System.out.println("test6");		
 		bookpage.SortEmail();
 		
-	}
+	}*/
 	@Test(priority=7)
 	public void verifyCancel()
 	{
