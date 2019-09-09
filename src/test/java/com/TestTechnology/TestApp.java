@@ -8,66 +8,106 @@ import org.testng.annotations.Test;
 import com.Technology.AddEBookPage;
 import com.Technology.Base;
 
-import junit.framework.Assert;
-
 @Listeners(com.Technology.listeners.class)
 
 public class TestApp extends Base {
-	
+
 	AddEBookPage bookpage = new AddEBookPage();
-	
+
 	@BeforeTest
 	public void browser() throws InterruptedException {
 		initialiseDriver1();
-		System.out.println(d+prop.getProperty("url"));
+		System.out.println(d + prop.getProperty("url"));
 		d.get(prop.getProperty("url"));
 	}
-	@Test(priority=1)
-	public void AddContact(){
-		System.out.println("test1");
-		bookpage.enterContactDetails();	
-		
+
+	@Test(priority = 1)
+	public void AddContact() {
+		System.out.println("Test1: Creating the new contact record");
+		bookpage.enterContactDetails();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	@Test(priority=2)
-	public void verifyContact(){
-		System.out.println("test2");
+
+	@Test(priority = 2)
+	public void verifyContact() {
+		System.out.println("Test2: Verifying the search option");
 		bookpage.SetFilterContact();
 		bookpage.SetFilterContactName();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	@Test(priority=3)
-	public void verifyContactEditable()
-	{
-		System.out.println("test3");
+
+	@Test(priority = 3)
+	public void verifyContactEditable() {
+		System.out.println("Test3: Verifying the Edit Option");
 		bookpage.EditContactDetails();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	@Test(priority=4)
-	public void verifysortAlphabet()
-	{
-		System.out.println("test4");
+
+	@Test(priority = 4)
+	public void verifysortAlphabet() throws InterruptedException {
+		System.out.println("Test4: Verifying FirstName Column");
 		bookpage.SortAlphabetWise();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	@Test(priority=5)
-	public void verifysortLastname() 
-	{
-		System.out.println("test5");
+
+	@Test(priority = 5)
+	public void verifysortLastname() {
+		System.out.println("Test5: Verifying Sorting LastName Column");
 		bookpage.SortLatname();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	/*@Test(priority=6)
-	public void verifyEmail()
-	{
-		System.out.println("test6");		
+
+	@Test(priority = 6)
+	public void verifysortEmail() {
+		System.out.println("Test6: Verifying Sorting Email Column");
 		bookpage.SortEmail();
-		
-	}*/
-	@Test(priority=7)
-	public void verifyCancel()
-	{
-		System.out.println("test7");
-		bookpage.CancelEdit();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
+
+	@Test(priority = 7)
+	public void verifyCancel() {
+		System.out.println("Test7: Verifying Cancel Button");
+		bookpage.CancelEdit();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 	@AfterTest
-	public void exit()
-	{
+	public void exit() {
 		d.quit();
 	}
 }
