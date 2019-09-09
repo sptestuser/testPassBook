@@ -75,7 +75,6 @@ public class AddEBookPage extends Base {
 
 	public void EditContactDetails() {
 		String s = d.findElement(ContactEdit).getText();
-		System.out.println(s);
 		WebDriverWait wait = new WebDriverWait(d, 15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(ContactEdit));
 		d.findElement(ContactEdit).click();
@@ -99,7 +98,6 @@ public class AddEBookPage extends Base {
 		d.findElement(FilterContact).clear();
 		d.findElement(FilterContact).sendKeys(prop.getProperty("FilterContact1"));
 		String s1 = d.findElement(ContactEdit).getText();
-		System.out.println(s1);
 		Assert.assertEquals(s1, d.findElement(ContactEdit).getText());
 	}
 
@@ -108,9 +106,8 @@ public class AddEBookPage extends Base {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(FilterContact));
 		d.findElement(FilterContact).clear();
 		d.findElement(FilterContact).sendKeys(Keys.ENTER);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		d.findElement(SortAlphabet).click();
-		Thread.sleep(2000);
 		Assert.assertEquals(true, d.findElement(ContactEdit).getText().startsWith("A"));
 	}
 
