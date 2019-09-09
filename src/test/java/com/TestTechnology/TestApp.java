@@ -60,7 +60,7 @@ public class TestApp extends Base {
 
 	@Test(priority = 4)
 	public void verifysortAlphabet() throws InterruptedException {
-		System.out.println("Test4: Verifying FirstName Column");
+		System.out.println("Test4: Verifying Sorting on First Name Column");
 		bookpage.SortAlphabetWise();
 		try {
 			Thread.sleep(5000);
@@ -72,7 +72,7 @@ public class TestApp extends Base {
 
 	@Test(priority = 5)
 	public void verifysortLastname() {
-		System.out.println("Test5: Verifying Sorting LastName Column");
+		System.out.println("Test5: Verifying Sorting  on LastName Column");
 		bookpage.SortLatname();
 		try {
 			Thread.sleep(5000);
@@ -84,7 +84,7 @@ public class TestApp extends Base {
 
 	@Test(priority = 6)
 	public void verifysortEmail() {
-		System.out.println("Test6: Verifying Sorting Email Column");
+		System.out.println("Test6: Verifying Sorting on Email Column");
 		bookpage.SortEmail();
 		try {
 			Thread.sleep(5000);
