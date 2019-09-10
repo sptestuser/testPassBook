@@ -1,4 +1,5 @@
 package com.Technology;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,7 +11,7 @@ public class listeners implements ITestListener {
 	Base baseClass=new Base();
 
 	public void onTestStart(ITestResult result) {
-		
+						
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -40,6 +41,7 @@ public class listeners implements ITestListener {
 	}
 
 	public void onStart(ITestContext context) {
+		
 		try {
 			FileOutputStream fos = new FileOutputStream("low-risk.prop");
 	        fos.close();
