@@ -106,7 +106,7 @@ public class AddEBookPage extends Base {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(FilterContact));
 		d.findElement(FilterContact).clear();
 		d.findElement(FilterContact).sendKeys(Keys.ENTER);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		d.findElement(SortAlphabet).click();
 		Assert.assertEquals(true, d.findElement(ContactEdit).getText().startsWith("A"));
 	}
