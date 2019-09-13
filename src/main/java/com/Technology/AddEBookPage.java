@@ -116,6 +116,7 @@ public class AddEBookPage extends Base {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(FilterContact));
 		d.findElement(FilterContact).clear();
 		d.findElement(FilterContact).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
 		d.findElement(SortLastname).click();
 		Assert.assertEquals(true, d.findElement(ContactEdit).getText().contains("Anderson"));
 
@@ -126,6 +127,7 @@ public class AddEBookPage extends Base {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(FilterContact));
 		d.findElement(FilterContact).clear();
 		d.findElement(FilterContact).sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
 		d.findElement(SortEmail).click();
 		Assert.assertEquals(true, d.findElement(ContactEdit).getText().contains("alex@brown.com"));
 	}
