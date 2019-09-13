@@ -78,7 +78,7 @@ public class TestApp extends Base {
 	 * Verifying Sorting on LastName Column
 	 */
 	@Test(priority = 5)
-	public void verifysortLastname() {
+	public void verifysortLastname() throws InterruptedException {
 		System.out.println("Test5: Verifying Sorting  on LastName Column");
 		bookpage.SortLatname();
 
@@ -88,7 +88,7 @@ public class TestApp extends Base {
 	 * Verifying Sorting on Email Column
 	 */
 	@Test(priority = 6)
-	public void verifysortEmail() {
+	public void verifysortEmail() throws InterruptedException {
 		System.out.println("Test6: Verifying Sorting on Email Column");
 		bookpage.SortEmail();
 
