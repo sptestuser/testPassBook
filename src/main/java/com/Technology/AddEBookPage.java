@@ -111,7 +111,7 @@ public class AddEBookPage extends Base {
 		Assert.assertEquals(true, d.findElement(ContactEdit).getText().startsWith("A"));
 	}
 
-	public void SortLatname() {
+	public void SortLatname() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(d, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(FilterContact));
 		d.findElement(FilterContact).clear();
@@ -122,7 +122,7 @@ public class AddEBookPage extends Base {
 
 	}
 
-	public void SortEmail() {
+	public void SortEmail() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(d, 5);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(FilterContact));
 		d.findElement(FilterContact).clear();
